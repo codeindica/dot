@@ -1,4 +1,4 @@
-### dot.
+# dot.
 Dot is a day to day management app with the feature to archive items for later.
 You can also share todo's directly via social media apps.
 
