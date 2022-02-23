@@ -2,11 +2,12 @@ import React from 'react'
 import {View,Text, StyleSheet,TextInput,TouchableOpacity, Platform,Keyboard } from 'react-native'
 import { styles } from '../design/styles'
 
-export default function TextBox({label,max,onChangeText,value,onSubmitEditing,placeholder,onPress}) {
+export default function TextBox({focus,label,max,onChangeText,value,onSubmitEditing,placeholder,onPress}) {
   return (
     <View style={styles.pad}>
       <Text style={styles.sm}>{label}</Text>
       <TextInput
+        autoFocus={focus}
         label={label}
         value={value}
         onChangeText={onChangeText}

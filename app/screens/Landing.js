@@ -29,7 +29,8 @@ export default function Landing() {
       <View style={styles.circle}/>
       <View style={styles.pad}>
         <TextBox
-          label={'Enter username'}
+          focus={false}
+          label={'Enter your name'}
           max={12}
           onPress={()=>handleNameInput()}
           onChangeText={(text)=>setName(text)}

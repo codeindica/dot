@@ -33,7 +33,8 @@ export default function Dashboard() {
 
   const addContent=()=> {
     BottomRef.current.open();
-    setSearchText('')
+    setSearchText('');
+
   }
 
   const saveData=()=>{
@@ -181,7 +182,8 @@ export default function Dashboard() {
       >
         <View style={styles.circle}/>
         <TextBox
-          max={30}
+          focus={true}
+          max={26}
           label={'Enter your todo item'}
           onChangeText={text=>setValue(text)}
           onPress={()=>saveData()}
